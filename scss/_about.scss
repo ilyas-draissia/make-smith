@@ -1,0 +1,36 @@
+.main #about{
+  background-position:0 -4rem ;
+  }
+
+  .about__work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(35rem,100%), 1fr));
+    gap: var(--space-s);
+    .work{
+    border-bottom: 7px var(--color--2) solid;
+    background-color:var(--color--1) ;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    &__time{
+        color: var(--color--2);
+        background-color: white;
+        border-radius: 1rem 1rem 0 0;
+        font-size: var(--step-1);
+    }
+    &__name,&__company{
+        font-size: var(--step-2);
+    }
+    &__info{
+    margin-top: .5rem;
+    background-color: rgb(148, 148, 148);
+    padding-inline:var(--space-s) ;
+}
+}
+  }
+  .about__name{
+    margin:5vh 0 2.5vh 0 ;
+    color: var(--color--2);
+  }
+  .about__info{
+    margin:5vh 0 5vh 0 ;
+  }

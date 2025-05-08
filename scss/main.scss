@@ -1,0 +1,53 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
+
+body{
+  min-height: 100dvh;
+  display: flex;
+  flex-flow: column;
+  background: 
+  linear-gradient(
+    to right,
+    rgba(rgb(28, 28, 28) ,0.9),
+    rgba(rgb(28, 28, 28) ,0.3)
+  ),
+  url(/dist/img/model-1.jpg) ;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-inline: var(--space-l);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.main{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.home__name, .about__name{
+  font-size: var(--step-6);
+  font-weight: var(--weight--5);
+}
+.home__info, .about__info{
+  font-size: var(--step-1);
+  font-weight: var(--weight--4);
+}
+.header{
+  height: 3.5rem;
+  font-size: var(--step-0);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  .menu-nav{
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+

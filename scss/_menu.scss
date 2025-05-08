@@ -1,0 +1,55 @@
+.menu-nav{
+    display: flex;
+    &__item {
+        a{
+        text-decoration: none;
+        color: inherit;}
+        font-size: var(--step-1);
+        font-weight: var(--weight--4);
+        &.active{
+            color: var(--color--2);
+        }
+        &:hover{
+            color: var(--color--2);
+        }
+    }
+    li{
+        list-style: none;
+    }
+}
+.menu-btn{
+    transition: all ease;
+    height: 1.8rem;
+    aspect-ratio: 1;
+    position: absolute;
+    display:flex ;
+    align-items: center;
+    visibility: hidden;
+    &__burger{
+        display: block;
+        background-color: white;
+        height: 5px;
+        width: 100%;
+    }
+    &__burger::after{
+        position: absolute;
+        content:"";
+        background-color: inherit;
+        height: inherit;
+        width: 100%;
+        bottom:0% ;
+    }
+    &__burger::before{
+        position: absolute;
+        content:"";
+        background-color: inherit;
+        height: inherit;
+        width: 100%;
+        top: 0%;
+    }
+    &:hover .menu-btn__burger {
+    width: 70%;
+    transition: all 0.3s ease;
+}
+
+}

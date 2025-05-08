@@ -1,0 +1,47 @@
+@media screen and (max-width:768px) {
+    .menu-btn{
+        z-index:999;
+        visibility: visible;
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        &__burger.open{
+            width: 0%!important;
+            transition: none;
+        
+        &::after{
+            transform: rotate(855deg) ;
+            bottom:unset ;
+            transition: all .5s ease-in-out;
+        }
+        &::before{
+            transform: rotate(765deg);
+            top: unset;
+            transition: all .5s ease-in-out;
+        }}
+    }
+    .nav{
+        position: absolute;
+        top: -50px;
+        transition: all .5s ease-in-out; 
+        &.open {
+            top: 0;
+            right: 0;
+            background-color: rgb(26, 26, 26);
+            opacity: 0.97;
+            width: 100dvw;
+            height: 100dvh;
+            transition: all .5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .menu-nav{
+                flex-flow: column;
+                text-align: center;
+                font-size: var(--step-3);
+                gap: var(--space-m);
+            }
+            
+        }    
+    }
+
+}
