@@ -214,7 +214,7 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-flow: column;
-  background: linear-gradient(to right, rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.3)), url(/dist/img/model-1.jpg);
+  background: linear-gradient(to right, rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.3)), url(/img/model-1.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,4 +251,4 @@ body {
 .header .menu-nav {
   display: flex;
   gap: 1.5rem;
-}/*# sourceMappingURL=main.css.map */
+}
